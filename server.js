@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
 
-process.env.PWD = process.cwd();
+// process.env.PWD = process.cwd();
 
 // Sets up the Express App
 // =============================================================
@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(process.env.PWD, '/app/public')));
+app.use("/app/public", express.static(__dirname + "/app/public"));
 
 // Routes
 // =============================================================

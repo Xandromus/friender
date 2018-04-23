@@ -1,24 +1,35 @@
 function apiRoutes(app) {
-    const express = require("express");
-    const bodyParser = require("body-parser");
-    const path = require("path");
-    let friends = require("./../data/friends.js");
+  const express = require("express");
+  const bodyParser = require("body-parser");
+  const path = require("path");
+  let friends = require("./../data/friends.js");
 
-    app.get("/api/friends", (req, res) => {
-        return res.json(friends);
-      });
+  app.get("/api/friends", (req, res) => {
+    return res.json(friends);
+  });
 
-      app.post("/api/friends", (req, res) => {
-        // req.body hosts is equal to the JSON post sent from the user
-        // This works because of our body-parser middleware
-        let newfriend = req.body;
-      console.log(friends);
-        console.log(newfriend);
-      
-        // friends.push(newfriend);
-      
-        // res.json(newfriend);
-      });
+  app.post("/api/friends", (req, res) => {
+    let totalDifference;
+    let differenceArray = [];
+    let newfriend = req.body;
+    console.log(newfriend);
+
+    for (let i = 0; i < friends.length; i++) {
+      totalDifference = 0;
+      for (let j = 0; j < newfriend.scores.length; j++) {
+        totalDifference += Math.abs(friends[i].scores[j] - newfriend.scores[j]);
+      }
+      differenceArray.push(totalDifference);
+    }
+
+    console.log(differenceArray);
+    let match = differenceArray.indexOf(Math.min(...differenceArray));
+    console.log(match);
+
+    friends.push(newfriend);
+
+    res.json(friends[match]);
+  });
 }
 
 module.exports = apiRoutes;
