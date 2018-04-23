@@ -18,6 +18,8 @@ let htmlRoutes = require('./app/routing/htmlRoutes.js')(app);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.use(express.static("app/public"));
+
 
 // Starts the server to begin listening
 // =============================================================
