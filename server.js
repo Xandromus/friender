@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
 
+process.env.PWD = process.cwd();
+
 // Sets up the Express App
 // =============================================================
 const app = express();
@@ -18,7 +20,7 @@ let htmlRoutes = require('./app/routing/htmlRoutes.js')(app);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, '/app/public')));
+app.use(express.static(path.join(process.env.PWD, '/app/public')));
 
 
 // Starts the server to begin listening
