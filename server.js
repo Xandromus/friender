@@ -18,7 +18,7 @@ let htmlRoutes = require('./app/routing/htmlRoutes.js')(app);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, "app/public")));
+app.use(express.static(path.join(__dirname, "/app/public")));
 
 
 // Starts the server to begin listening
