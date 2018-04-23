@@ -2,10 +2,10 @@ module.exports = function apiRoutes(app) {
     const express = require("express");
     const bodyParser = require("body-parser");
     const path = require("path");
-    let friends = require("/../data/friends.js");
+    let friends = require("./../data/friends.js");
 
     app.get("/api/friends", (req, res) => {
-        return res.json(friendsArr);
+        return res.json(friends);
       });
 
       app.post("/api/friends", function(req, res) {

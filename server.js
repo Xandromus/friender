@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 // Routes
 // =============================================================
 
-let apiRoutes = require('./app/routing/apiRoutes.js'); 
+let apiRoutes = require('./app/routing/apiRoutes.js')(app); 
 let htmlRoutes = require('./app/routing/htmlRoutes.js')(app);
 
 
