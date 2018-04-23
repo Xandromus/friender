@@ -1,4 +1,4 @@
-function htmlRoutes(app) {
+module.exports = function htmlRoutes(app) {
     const express = require("express");
     const bodyParser = require("body-parser");
     const path = require("path");
@@ -11,5 +11,3 @@ function htmlRoutes(app) {
         res.sendFile(path.join(__dirname, "/../public/home.html"));
       });
 }
-
-module.exports = htmlRoutes;

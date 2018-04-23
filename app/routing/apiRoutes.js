@@ -1,4 +1,4 @@
-function apiRoutes(app) {
+module.exports = function apiRoutes(app) {
   const express = require("express");
   const bodyParser = require("body-parser");
   const path = require("path");
@@ -31,5 +31,3 @@ function apiRoutes(app) {
     res.json(friends[match]);
   });
 }
-
-module.exports = apiRoutes;
