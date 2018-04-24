@@ -1,6 +1,4 @@
 module.exports = function htmlRoutes(app) {
-    const express = require("express");
-    const bodyParser = require("body-parser");
     const path = require("path");
 
     app.get("/survey", (req, res) => {

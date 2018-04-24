@@ -1,6 +1,5 @@
 module.exports = function apiRoutes(app) {
-  const express = require("express");
-  const bodyParser = require("body-parser");
+  const fs = require("fs");
   const path = require("path");
   let friends = require("./../data/friends.js");
 
@@ -13,6 +12,15 @@ module.exports = function apiRoutes(app) {
     let differenceArray = [];
     let newfriend = req.body;
     console.log(newfriend);
+
+  //  friends = friends.reduce((carry, friend) => {
+  //   let val = newfriend.scores.reduce(
+  //               (carry, currentScore, i) => carry + Math.abs(friend.scores[i] - currentScore), 
+  //               0
+  //             );
+    
+  //   return val < carry.val ? { target: friend, val: val} : carry;
+  //  }, 100)
 
     for (let i = 0; i < friends.length; i++) {
       totalDifference = 0;
@@ -27,6 +35,16 @@ module.exports = function apiRoutes(app) {
     console.log(match);
 
     friends.push(newfriend);
+
+    fs.readFile('../friender/app/data/friends.json', 'utf8', (err, data) => {
+        if (err) throw err;
+        let json = JSON.parse(data);
+        json.push(newfriend);
+
+        fs.writeFile('../friender/app/data/friends.json', JSON.stringify(json, null, 2), (err) => {
+          if (err) throw err;
+        });
+    });
 
     res.json(friends[match]);
   });
