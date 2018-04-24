@@ -36,12 +36,12 @@ module.exports = function apiRoutes(app) {
 
     friends.push(newfriend);
 
-    fs.readFile('../friender/app/data/friends.json', 'utf8', (err, data) => {
+    fs.readFile(path.join(__dirname, '../data/friends.json'), 'utf8', (err, data) => {
         if (err) throw err;
         let json = JSON.parse(data);
         json.push(newfriend);
 
-        fs.writeFile('../friender/app/data/friends.json', JSON.stringify(json, null, 2), (err) => {
+        fs.writeFile(path.join(__dirname, '../data/friends.json'), JSON.stringify(json, null, 2), (err) => {
           if (err) throw err;
         });
     });
