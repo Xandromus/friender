@@ -9,7 +9,7 @@ html {
 body {
     height: 100%;
     position: relative;
-    background-color: #388659;
+    background-color: #EAE0CC;
     font-family: 'Cabin', sans-serif;
 }
 
@@ -38,7 +38,7 @@ a:hover {
 /* HEADER */
 
 header {
-    background-color: transparent;
+    background-color: #388659;
     height: 50px;
     padding-top: 10px;
 }
@@ -93,6 +93,7 @@ footer {
     margin: 0 auto;
     clear: both;
     text-align: center;
+    background-color: #388659;
     color: #FBFBF2;
 }
 
@@ -105,9 +106,3 @@ footer p {
     margin: 0 auto;
     font-size: 1.5rem;
 }
-
-/* 4267B2
-59C3C3
-EAE0CC or 388659
-F45B69
-9EB3C2 or 95AFBA */
