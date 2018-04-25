@@ -1,0 +1,108 @@
+/* BASIC STYLES */
+
+html {
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    background-color: #388659;
+    font-family: 'Cabin', sans-serif;
+}
+
+a {
+    color: #CDE7B0;
+}
+
+a:hover {
+    color: #BFC8AD;
+    text-decoration: none;
+}
+
+/* WRAPPER */
+
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 0 0 100px;
+    position: relative;
+}
+
+/* HEADER */
+
+header {
+    background-color: transparent;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.jumbotron {
+    background-color: #CDE7B0!important;
+}
+
+/* MAIN */
+
+main {
+    margin-bottom: auto;
+    position: relative;
+    background-color: #CDE7B0;
+}
+
+
+/* MIDDLE */
+
+.middle {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #CDE7B0;
+}
+
+.btn-survey {
+    background-color: #4267B2;
+    color: white;
+}
+
+.btn-survey:hover {
+    background-color: #388659;
+}
+
+.btn-survey a:hover {
+    color: #CDE7B0;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+/* 4267B2
+59C3C3
+CDE7B0 or 388659
+F45B69
+9EB3C2 or 95AFBA */
