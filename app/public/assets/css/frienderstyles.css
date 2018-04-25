@@ -14,11 +14,11 @@ body {
 }
 
 a {
-    color: #CDE7B0;
+    color: #CCC9A1;
 }
 
 a:hover {
-    color: #BFC8AD;
+    color: #FBFBF2;
     text-decoration: none;
 }
 
@@ -40,7 +40,7 @@ header {
 }
 
 .jumbotron {
-    background-color: #CDE7B0!important;
+    background-color: #CCC9A1!important;
 }
 
 /* MAIN */
@@ -48,7 +48,7 @@ header {
 main {
     margin-bottom: auto;
     position: relative;
-    background-color: #CDE7B0;
+    background-color: #CCC9A1;
 }
 
 
@@ -60,20 +60,21 @@ main {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background-color: #CDE7B0;
+    background-color: #CCC9A1;
 }
 
 .btn-survey {
     background-color: #4267B2;
-    color: white;
+    color: #CCC9A1;
 }
 
 .btn-survey:hover {
     background-color: #388659;
+    color: #FBFBF2;
 }
 
 .btn-survey a:hover {
-    color: #CDE7B0;
+    color: #CCC9A1;
     text-decoration: none;
 }
 
@@ -88,7 +89,7 @@ footer {
     margin: 0 auto;
     clear: both;
     text-align: center;
-    color: white;
+    color: #FBFBF2;
 }
 
 footer p {
@@ -103,6 +104,6 @@ footer p {
 
 /* 4267B2
 59C3C3
-CDE7B0 or 388659
+CCC9A1 or 388659
 F45B69
 9EB3C2 or 95AFBA */
