@@ -22,6 +22,10 @@ a:hover {
     text-decoration: none;
 }
 
+.logo-small {
+    max-height: 30px;
+}
+
 /* WRAPPER */
 
 .wrapper {
