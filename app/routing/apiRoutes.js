@@ -30,18 +30,18 @@ module.exports = function apiRoutes(app) {
     let match = differenceArray.indexOf(Math.min(...differenceArray));
     console.log(match);
 
+    res.json(friends[match]);
+
     // friends.push(newfriend);
 
     fs.readFile(path.join(__dirname, '../data/friends.json'), 'utf8', (err, data) => {
       if (err) throw err;
-      let json = JSON.parse(data);
-      json.push(newfriend);
+      friends = JSON.parse(data);
+      friends.push(newfriend);
 
-      fs.writeFile(path.join(__dirname, '../data/friends.json'), JSON.stringify(json, null, 2), (err) => {
+      fs.writeFile(path.join(__dirname, '../data/friends.json'), JSON.stringify(friends, null, 2), (err) => {
         if (err) throw err;
       });
     });
-
-    res.json(friends[match]);
   });
 }
