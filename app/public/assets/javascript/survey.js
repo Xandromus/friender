@@ -1,8 +1,6 @@
 // Chosen CSS
 var config = {
-    ".chosen-select": {
-        inherit_select_classes: true
-    },
+    ".chosen-select": {},
     ".chosen-select-deselect": {
       allow_single_deselect: true
     },
