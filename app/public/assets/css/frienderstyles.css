@@ -122,4 +122,10 @@ footer p {
 .chosen-container .chosen-results li.highlighted {
     background-color: #4267B2;
     background-image: none;
+    color: #FBFBF2!important;
+}
+
+.chosen-drop, .chosen-single, .chosen-default {
+    background-color: #FBFBF2;
+    background-image: none!important;
 }
