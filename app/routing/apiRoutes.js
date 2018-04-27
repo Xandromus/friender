@@ -3,7 +3,7 @@ module.exports = function apiRoutes(app) {
   const path = require("path");
   let friends = require("./../data/friends.json");
 
-  app.get("/api/friends", (req, res) => {
+  app.GET("/api/friends", (req, res) => {
     // friends(friends => res.json(friends));
     return fs.readFile(path.join(__dirname, '../data/friends.json'), 'utf8', (err, data) => {
       if (err) throw err;
@@ -12,7 +12,7 @@ module.exports = function apiRoutes(app) {
     });
   });
 
-  app.post("/api/friends", (req, res) => {
+  app.POST("/api/friends", (req, res) => {
     let totalDifference;
     let differenceArray = [];
     let newfriend = req.body;
