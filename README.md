@@ -14,7 +14,7 @@ friender takes users' answers to 10 questions, as well as a name and a link to a
 
 ## Setup and Usage
 
-The friender app can be accessed through either the Heroku deployment above, or it can be run locally through Node using the server.js file on Port 3000.
+The friender app can be accessed either through the Heroku deployment above or it can be run locally through Node using the server.js file on Port 3000.
 
 
 ## Concepts Used
@@ -39,7 +39,7 @@ The friender app can be accessed through either the Heroku deployment above, or 
 
 ## Future Development
 
-As friender is essentially a social-networking site, any future development would involve giving it more functionality that you might expect in such an application. Some basic enhancments would include:
+As friender is essentially a social-networking site, any future development would involve giving it more functionality that you might expect in such an application. Some basic enhancements would include:
 
 1. Validation for image URLs
 

@@ -26,9 +26,6 @@ h2 {
     text-align: center;
 }
 
-.logo-small {
-    max-height: 30px;
-}
 
 /* WRAPPER */
 
@@ -38,6 +35,7 @@ h2 {
     padding: 0 0 100px;
     position: relative;
 }
+
 
 /* HEADER */
 
@@ -60,9 +58,17 @@ header p {
     display: inline;
 }
 
+.logo-small {
+    max-height: 30px;
+}
+
+
+/* JUMBOTRON */
+
 .jumbotron {
     background-color: #EAE0CC!important;
 }
+
 
 /* MAIN */
 
@@ -84,6 +90,9 @@ main {
     background-color: #EAE0CC;
 }
 
+
+/* SURVEY BUTTON */
+
 .btn-survey {
     background-color: #4267B2;
     color: #EAE0CC;
@@ -99,9 +108,41 @@ main {
     text-decoration: none;
 }
 
-.btn-survey h4 {
-    margin-bottom: 0!important;
+
+/* MODALS */
+
+#results-modal,
+#alert-modal {
+    padding-right: 0!important;
 }
+
+
+/* CHOSEN SELECTS */
+
+.chosen-container-single .chosen-single {
+    background-color: #FBFBF2;
+    background-image: none!important;
+}
+
+.chosen-container .chosen-results li.highlighted {
+    background-color: #4267B2;
+    background-image: none!important;
+    color: #FBFBF2!important;
+}
+
+.chosen-drop,
+.chosen-single,
+.chosen-default,
+.chosen-results,
+.chosen-search {
+    background-color: #FBFBF2;
+    background-image: none!important;
+}
+
+.chosen-container .chosen-drop {
+    background: #FBFBF2;
+}
+
 
 /* FOOTER */
 
@@ -128,61 +169,36 @@ footer p {
     font-size: 1.5rem;
 }
 
-/* MODALS */
-
-#results-modal,
-#alert-modal {
-    padding-right: 0!important;
-}
-
-/* CHOSEN SELECTS */
-
-.chosen-container-single .chosen-single {
-    background-color: #FBFBF2;
-    background-image: none!important;
-}
-
-.chosen-container .chosen-results li.highlighted {
-    background-color: #4267B2;
-    background-image: none!important;
-    color: #FBFBF2!important;
-}
-
-.chosen-drop, .chosen-single, .chosen-default, .chosen-results, .chosen-search {
-    background-color: #FBFBF2;
-    background-image: none!important;
-}
-
-.chosen-container .chosen-drop {
-    background: #FBFBF2;
-}
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 991px) {
-    .h2, h2 {
+    .h2,
+    h2 {
         font-size: 1.4rem;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .h2, h2 {
+    .h2,
+    h2 {
         font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 510px) {
-    .h2, h2 {
+    .h2,
+    h2 {
         text-align: left!important;
+    }
+    .logo-small {
+        max-height: 25px;
     }
     .questions h3 {
         font-size: 1.5rem;
     }
     .questions h4 {
         font-size: 1.3rem;
-    }
-    .logo-small {
-        max-height: 25px;
     }
 }
 
@@ -193,19 +209,19 @@ footer p {
     header {
         height: 45px;
     }
+    .fa-github {
+        display: inline;
+    }
+    .repo {
+        display: none;
+    }
+    .logo-small {
+        max-height: 20px;
+    }
     .questions h4 {
         font-size: 1.1rem;
     }
     footer p {
         font-size: 1.2rem;
     }
-    .logo-small {
-        max-height: 20px;
-    }
-    .fa-github {
-        display: inline;
-    }
-    .repo {
-        display: none;
 }
-}  
