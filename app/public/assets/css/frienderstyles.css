@@ -135,20 +135,26 @@ footer p {
     padding-right: 0!important;
 }
 
+/* CHOSEN SELECTS */
+
 .chosen-container-single .chosen-single {
     background-color: #FBFBF2;
-    background-image: none;
+    background-image: none!important;
 }
 
 .chosen-container .chosen-results li.highlighted {
     background-color: #4267B2;
-    background-image: none;
+    background-image: none!important;
     color: #FBFBF2!important;
 }
 
-.chosen-drop, .chosen-single, .chosen-default {
+.chosen-drop, .chosen-single, .chosen-default, .chosen-results, .chosen-search {
     background-color: #FBFBF2;
     background-image: none!important;
+}
+
+.chosen-container .chosen-drop {
+    background: #FBFBF2;
 }
 
 /* MEDIA QUERIES */
