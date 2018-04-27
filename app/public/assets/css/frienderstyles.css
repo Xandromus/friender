@@ -22,6 +22,10 @@ a:hover {
     text-decoration: none;
 }
 
+h2 {
+    text-align: center;
+}
+
 .logo-small {
     max-height: 30px;
 }
@@ -41,6 +45,19 @@ header {
     background-color: #388659;
     height: 50px;
     padding-top: 10px;
+}
+
+header p {
+    margin-top: 3px;
+}
+
+.fa-github {
+    display: none;
+    font-size: 1rem;
+}
+
+.repo {
+    display: inline;
 }
 
 .jumbotron {
@@ -80,6 +97,10 @@ main {
 .btn-survey a:hover {
     color: #EAE0CC;
     text-decoration: none;
+}
+
+.btn-survey h4 {
+    margin-bottom: 0!important;
 }
 
 /* FOOTER */
@@ -129,3 +150,56 @@ footer p {
     background-color: #FBFBF2;
     background-image: none!important;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 991px) {
+    .h2, h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .h2, h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .h2, h2 {
+        text-align: left!important;
+    }
+    .questions h3 {
+        font-size: 1.5rem;
+    }
+    .questions h4 {
+        font-size: 1.3rem;
+    }
+    .logo-small {
+        max-height: 25px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    body {
+        font-size: 0.8rem;
+    }
+    header {
+        height: 45px;
+    }
+    .questions h4 {
+        font-size: 1.1rem;
+    }
+    footer p {
+        font-size: 1.2rem;
+    }
+    .logo-small {
+        max-height: 20px;
+    }
+    .fa-github {
+        display: inline;
+    }
+    .repo {
+        display: none;
+}
+}  
