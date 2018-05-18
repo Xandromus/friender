@@ -5,7 +5,7 @@ friender is a Node and Express app deployed to Heroku that offers a friend match
 
 ## Description
 
-[friender](https://afternoon-beyond-93881.herokuapp.com/)
+[friender](https://friender-friendfinder.herokuapp.com/)
 
 ![friender](http://www.rapstine.com/images/friender.png)
 
